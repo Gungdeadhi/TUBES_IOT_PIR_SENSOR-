@@ -1,0 +1,13 @@
+function doGet(e) {
+  var spreadsheet = SpreadsheetApp.openById("YOUR_SPREEDSHEET_ID"); // Ganti dengan ID Spreadsheet Anda
+  var sheet = spreadsheet.getSheetByName("YOUR_SHEET_NAME");
+  
+  if (!sheet) {
+    return ContentService.createTextOutput("Sheet tidak ditemukan!");
+  }
+
+  // Tambahkan data ke baris baru
+  sheet.appendRow([new Date(), e.parameter.pirState]);
+
+  return ContentService.createTextOutput("Success");
+}
