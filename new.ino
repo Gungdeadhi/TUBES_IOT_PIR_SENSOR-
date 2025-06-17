@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL6MnwBQYLQ"
+#define BLYNK_TEMPLATE_ID "BLYNK_TEMPLATE_ID"
 #define BLYNK_TEMPLATE_NAME "SensorPIR"
-#define BLYNK_AUTH_TOKEN "FKaDqmaSEnTGqVSj8bWGpnKzV4RpNbcE"
+#define BLYNK_AUTH_TOKEN "BLYNK_AUTH_TOKEN"
 
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
